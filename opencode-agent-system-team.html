@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenCode Agent System & Team</title>
+<style>
+html,body{height:100%;margin:0;background:#0b1020;color:#e8eefc;font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif}.loading{height:100%;display:grid;place-items:center;text-align:center;padding:24px}.loading strong{font-size:28px}.loading p{color:#a9b8d8;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="loading" id="loading"><div><strong>OpenCode Agent System & Team</strong><p>슬라이드를 불러오는 중입니다.</p></div></div>
+<script>
+(async()=>{
+  try{
+    const response=await fetch('./assets/opencode_agent_system_team_slides.html.gz');
+    if(!response.ok) throw new Error('HTTP '+response.status);
+    if(typeof DecompressionStream==='undefined') throw new Error('This browser does not support DecompressionStream.');
+    const stream=response.body.pipeThrough(new DecompressionStream('gzip'));
+    const html=await new Response(stream).text();
+    document.open();
+    document.write(html);
+    document.close();
+  }catch(error){
+    document.getElementById('loading').innerHTML='<div><strong>슬라이드를 열 수 없습니다.</strong><p>'+String(error)+'</p><p>최신 Chrome/Edge 브라우저에서 다시 열어 주세요.</p></div>';
+  }
+})();
+</script>
+</body>
+</html>
