@@ -19,9 +19,7 @@ AI Agent System의 개념을 단계적으로 설명하는 반응형 HTML 슬라�
 - pytest / Jira Agent examples
 - 5-layer Agent System model
 
-GitHub Pages:
-
-`https://ljd6805.github.io/seminar_ai_agent_system/`
+[▶ AI Agent System 슬라이드 열기](https://ljd6805.github.io/seminar_ai_agent_system/)
 
 ### 2. OpenCode Agent System & Team
 
@@ -40,9 +38,7 @@ OpenCode를 Agent Runtime으로 활용하고 Python Harness/Loop와 Subagent Tea
 - Agent Loop 단계별 실습
 - 운영 구조로 확장할 때의 Queue / Server / Validator / Human Approval
 
-GitHub Pages:
-
-`https://ljd6805.github.io/seminar_ai_agent_system/opencode-agent-system-team.html`
+[▶ OpenCode Agent System & Team 슬라이드 열기](https://ljd6805.github.io/seminar_ai_agent_system/opencode-agent-system-team.html)
 
 ## Local
 
